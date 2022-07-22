@@ -11,7 +11,7 @@
 
 挂梯子，然后安装termux，然后换国内源，之后
 
-pkg install wget -y && wget github.com/wspbh/install.sh && chmod +x install.sh && ./install.sh
+pkg install wget -y && wget https://github.com/wspbh/kali-on-phone/releases/download/sh/install.sh && chmod +x install.sh && ./install.sh
 
 
 然后是等
