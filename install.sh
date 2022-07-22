@@ -1,6 +1,6 @@
 #~/../usr/bash
 echo '作者:wspbh github地址:www.github.com/wspbh 项目地址:www.github.com/wspbh/kali-on phone'
-echo '请将软件源改为国内后在继续'
+echo '请将软件源改为国内后再继续'
 echo '请注意'
 echo '你最好使用梯子'
 echo '该脚本需从外网下载将近2G的文件'
