@@ -18,7 +18,7 @@ if [ ! -d kali-arm64 ];then
 
 	   echo '安装失败了,可能是你强制停止或网络问题?'
 	   echo '按CTRL+C退出脚本'
-           sleep 99999999
+           exit 1
 
 fi
 
