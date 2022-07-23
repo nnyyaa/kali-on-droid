@@ -1,4 +1,4 @@
-#~/../usr/bash
+#/data/data/com.termux/files/usr/bin/bash
 echo '作者:wspbh github地址:www.github.com/wspbh'
 echo '推荐改为国内源后再进行安装'
 echo '该脚本需下载近1.7G的文件'
@@ -6,11 +6,10 @@ echo '确保你的网络正常，记得关流量XD'
 echo '否则安装失败不怪我'
 echo '5秒后开始'
 sleep 5
-termux-setup-storage
 apt update && apt upgrade
 cd ~
 pkg install wget curl unzip tar git -y
-echo -e "\033[31m 说起来你可能不信，aria2不配置甚至没有wget快\033[0m"  
+echo -e '\033[31m 说起来你可能不信，aria2不配置甚至没有wget快\033[0m'
 git clone https://hub.fastgit.xyz/wspbh/kali-on-phone.git
 cd ~
 wget https://images.kali.org/nethunter/kalifs-arm64-full.tar.xz
@@ -20,10 +19,9 @@ chmod +x install-nethunter-termux
 cd ~
 if [ ! -d kali-arm64 ];then
 
-	   echo -e "\033[31m 安装失败,可能是因为网络问题?\033[0m"  
-	   echo -e "\033[33m 按回车以退出\033[0m"
-           suspend
-
+	   echo -e '\033[31m 安装失败,可能是因为网络问题?\033[0m'
+	   read -p '按任意键退出
+           exit 1
 fi
 
 echo '完成！'
