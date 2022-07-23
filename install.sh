@@ -6,12 +6,11 @@ echo '确保你的网络正常，记得关流量XD'
 echo '否则安装失败不怪我'
 echo '5秒后开始'
 sleep 5
-rm install.sh
 termux-setup-storage
 apt update && apt upgrade
 cd ~
 pkg install wget curl unzip tar git -y
-echo -e "\033[3xm说起来你可能不信，aria2不配置还没wget快\033[0m"
+echo -e "\033[3x说起来你可能不信，aria2不配置还没wget快\033[0m"
 git clone https://hub.fastgit.xyz/wspbh/kali-on-phone.git
 cd ~
 wget https://images.kali.org/nethunter/kalifs-arm64-full.tar.xz
