@@ -6,6 +6,7 @@ echo '确保你的网络正常，记得关流量XD'
 echo '否则安装失败不怪我'
 echo '5秒后开始'
 sleep 5
+rm install.sh
 termux-setup-storage
 sed -i 's@^\(deb.*stable main\)$@#\1\ndeb https://mirrors.bfsu.edu.cn/termux/termux-packages-24 stable main@' $PREFIX/etc/apt/sources.list &&apt update && apt upgrade
 cd ~
