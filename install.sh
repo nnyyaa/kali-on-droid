@@ -20,7 +20,7 @@ cd ~
 if [ ! -d kali-arm64 ];then
 
 	   echo -e '\033[31m 安装失败,可能是因为网络问题?\033[0m'
-	   read -p '按任意键退出
+	   read -p '按任意键退出'
            exit 1
 fi
 
