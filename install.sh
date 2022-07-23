@@ -1,9 +1,10 @@
 #/data/data/com.termux/files/usr/bin/bash
 echo -e "\033[34m 作者:wspbh github地址:www.github.com/wspbh
-                  推荐改为国内源后再进行安装
-                  该脚本需下载近1.7G的文件
-                  确保你的网络正常，记得关流量XD否则安装失败不怪我
-                  5秒后开始\033[0m"
+推荐改为国内源后再进行安装
+该脚本需下载近1.7G的文件
+确保你的网络正常，记得关流量XD否则安装失败不怪我
+还有我的qq:1769481479
+5秒后开始\033[0m"
 sleep 5
 apt update && apt upgrade
 cd ~
