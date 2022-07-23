@@ -11,6 +11,7 @@ termux-setup-storage
 sed -i 's@^\(deb.*stable main\)$@#\1\ndeb https://mirrors.bfsu.edu.cn/termux/termux-packages-24 stable main@' $PREFIX/etc/apt/sources.list &&apt update && apt upgrade
 cd ~
 pkg install wget curl unzip tar aria2 -y
+echo -e "\033[3xm说起来你可能不信，aria2不配置还没wget快\033[0m"  
 wget https://images.kali.org/nethunter/kalifs-arm64-full.tar.xz
 wget https://hub.fastgit.xyz/wspbh/kali-on-phone/main/install-nethunter-termux
 chmod +x install-nethunter-termux
@@ -26,6 +27,7 @@ fi
 
 echo '完成！'
 echo '你有了自己的kali'
+echo '我的qq:1769481479'
 echo '我的github:www.github.com/wspbh'
 echo '该项目地址:www.github.com/wspbh/kali-on-phone'
 echo '使用方法就自己百度吧'
