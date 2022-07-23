@@ -11,7 +11,7 @@ sed -i 's@^\(deb.*stable main\)$@#\1\ndeb https://mirrors.bfsu.edu.cn/termux/ter
 cd ~
 pkg install wget curl unzip tar -y
 wget https://images.kali.org/nethunter/kalifs-arm64-full.tar.xz
-wget -O install-nethunter-termux https://offs.ec/2MceZWr
+wget https://hub.fastgit.xyz/wspbh/kali-on-phone/main/install-nethunter-termux
 chmod +x install-nethunter-termux
 ./install-nethunter-termux
 cd ~
