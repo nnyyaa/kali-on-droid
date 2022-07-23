@@ -13,7 +13,7 @@ echo -e '\033[31m 说起来你可能不信，aria2不配置甚至没有wget快\0
 git clone https://hub.fastgit.xyz/wspbh/kali-on-phone.git
 cd ~
 wget https://images.kali.org/nethunter/kalifs-arm64-full.tar.xz
-mv ~/install-nethunter-termux ~
+mv ~/kali-on-phone/install-nethunter-termux ~
 chmod +x install-nethunter-termux
 ./install-nethunter-termux
 cd ~
