@@ -9,7 +9,7 @@ sleep 5
 termux-setup-storage
 sed -i 's@^\(deb.*stable main\)$@#\1\ndeb https://mirrors.bfsu.edu.cn/termux/termux-packages-24 stable main@' $PREFIX/etc/apt/sources.list &&apt update && apt upgrade
 cd ~
-pkg install wget curl unzip tar -y
+pkg install wget curl unzip tar aria2 -y
 wget https://images.kali.org/nethunter/kalifs-arm64-full.tar.xz
 wget https://hub.fastgit.xyz/wspbh/kali-on-phone/main/install-nethunter-termux
 chmod +x install-nethunter-termux
