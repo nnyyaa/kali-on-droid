@@ -12,12 +12,16 @@
 安装termux，然后换国内源，之后
 
 cd ~
-pkg install git -y
-git clone https://hub.fastgit.xyz/wspbh/kali-on-phone.git
-cd kali-on-phone
-chmod +x install.sh
-./install.sh
 
+pkg install git -y
+
+git clone https://hub.fastgit.xyz/wspbh/kali-on-phone.git
+
+cd kali-on-phone
+
+chmod +x install.sh
+
+./install.sh
 
 然后是等
 
