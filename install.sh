@@ -14,7 +14,6 @@ apt update && apt upgrade
 cd ~
 pkg install wget curl unzip tar git -y
 echo -e '\033[31m 说起来你可能不信，aria2不配置甚至没有wget快\033[0m'
-git clone https://hub.fastgit.xyz/wspbh/kali-on-phone.git
 cd ~
 wget https://images.kali.org/nethunter/kalifs-arm64-full.tar.xz
 mv ~/kali-on-phone/install-nethunter-termux ~
@@ -26,6 +25,7 @@ if [ ! -d kali-arm64 ];then
 	   echo -e '\033[31m 安装失败,可能是因为网络问题?\033[0m'
 	   read -p '按任意键退出'
            exit 1
+
 fi
 
 echo '完成！'
