@@ -1,17 +1,18 @@
 #~/../usr/bash
-echo '作者:wspbh github地址:www.github.com/wspbh 项目地址:www.github.com/wspbh/kali-on phone'
-echo '请将软件源改为国内后再继续'
-echo '请注意'
-echo '你最好使用梯子'
-echo '该脚本需从外网下载将近2G的文件'
-echo '否则极有可能会失败，或者要安装很长时间'
+echo '作者:wspbh github地址:www.github.com/wspbh   gitee地址:www.github.com/sybs'
+echo '我会帮你改为bfsu源'
+echo '该脚本需下载近1.7G的文件'
+echo '确保你的网络正常，记得关流量XD'
+echo '否则安装失败不怪我'
 echo '5秒后开始'
 sleep 5
 termux-setup-storage
-sleep 2
+sed -i 's@^\(deb.*stable main\)$@#\1\ndeb https://mirrors.bfsu.edu.cn/termux/termux-packages-24 stable main@' $PREFIX/etc/apt/sources.list &&apt update && apt upgrade
+cd ~
 pkg install wget curl unzip tar -y
+wget https://images.kali.org/nethunter/kalifs-arm64-full.tar.xz
 wget -O install-nethunter-termux https://offs.ec/2MceZWr
-chmod +x install-nethunter-termux 
+chmod +x install-nethunter-termux
 ./install-nethunter-termux
 cd ~
 if [ ! -d kali-arm64 ];then
