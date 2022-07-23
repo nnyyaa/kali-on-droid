@@ -10,6 +10,8 @@ Y | y)
       sed -i 's@^\(deb.*stable main\)$@#\1\ndeb https://mirrors.bfsu.edu.cn/termux/termux-packages-24 stable main@' $PREFIX/etc/apt/sources.list;;
 *)
       echo '不换源';;
+esac
+
 apt update && apt upgrade
 cd ~
 pkg install wget curl unzip tar git -y
