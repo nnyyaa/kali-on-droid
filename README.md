@@ -9,9 +9,14 @@
 食用方法：
 
 
-挂梯子，然后安装termux，然后换国内源，之后
+安装termux，然后换国内源，之后
 
-pkg install wget -y && wget https://raw.githubusercontent.com/wspbh/kali-on-phone/main/install.sh && chmod +x install.sh && ./install.sh
+cd ~
+pkg install git -y
+git clone https://hub.fastgit.xyz/wspbh/kali-on-phone.git
+cd kali-on-phone
+chmod +x install.sh
+./install.sh
 
 
 然后是等
@@ -23,4 +28,4 @@ pkg install wget -y && wget https://raw.githubusercontent.com/wspbh/kali-on-phon
 安装完成后会有提示，失败也会有提示
 
 
-enjoy it!
+enjoy!
