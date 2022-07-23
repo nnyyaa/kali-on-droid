@@ -20,6 +20,8 @@ cd ~
 wget https://images.kali.org/nethunter/kalifs-arm64-full.tar.xz
 mv ~/kali-on-phone/install-nethunter-termux ~
 chmod +x install-nethunter-termux
+echo '接下来一路回车就行啦!3秒后开始!'
+sleep 3
 ./install-nethunter-termux
 cd ~
 if [ ! -d kali-arm64 ];then
