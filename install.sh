@@ -1,11 +1,15 @@
 #/data/data/com.termux/files/usr/bin/bash
 echo -e "\033[34m 作者:wspbh github地址:www.github.com/wspbh
-推荐改为国内源后再进行安装
 该脚本需下载近1.7G的文件
 确保你的网络正常，记得关流量XD否则安装失败不怪我
-还有我的qq:1769481479
-5秒后开始\033[0m"
-sleep 5
+还有我的qq:1769481479\033[0m"
+read -p '按回车以开始安装'
+read -n1 -p "你想将源改为bfsu国内源吗?(推荐更改)   [输Y以更改/任意键不更改]?" answer
+case $answer in
+Y | y)
+      sed -i 's@^\(deb.*stable main\)$@#\1\ndeb https://mirrors.bfsu.edu.cn/termux/termux-packages-24 stable main@' $PREFIX/etc/apt/sources.list;;
+*)
+      echo '不换源';;
 apt update && apt upgrade
 cd ~
 pkg install wget curl unzip tar git -y
