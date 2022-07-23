@@ -10,7 +10,7 @@ termux-setup-storage
 apt update && apt upgrade
 cd ~
 pkg install wget curl unzip tar git -y
-echo -e "\033[3x说起来你可能不信，aria2不配置还没wget快\033[0m"
+echo -e "\033[31m 说起来你可能不信，aria2不配置甚至没有wget快\033[0m"  
 git clone https://hub.fastgit.xyz/wspbh/kali-on-phone.git
 cd ~
 wget https://images.kali.org/nethunter/kalifs-arm64-full.tar.xz
@@ -20,9 +20,9 @@ chmod +x install-nethunter-termux
 cd ~
 if [ ! -d kali-arm64 ];then
 
-	   echo '安装失败了,可能是你强制停止或网络问题?'
-	   echo '按回车退出脚本'
-           exit 1
+	   echo -e "\033[31m 安装失败,可能是因为网络问题?\033[0m"  
+	   echo -e "\033[33m 按回车以退出\033[0m"
+           suspend
 
 fi
 
