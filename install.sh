@@ -14,10 +14,9 @@ esac
 
 apt update && apt upgrade
 cd ~
-pkg install wget curl unzip tar git -y
-echo -e '\033[31m 说起来你可能不信，aria2不配置甚至没有wget快\033[0m'
+pkg install wget curl unzip tar git aria2 -y
 cd ~
-wget https://images.kali.org/nethunter/kalifs-arm64-full.tar.xz
+aria2c https://images.kali.org/nethunter/kalifs-arm64-full.tar.xz
 mv ~/kali-on-phone/install-nethunter-termux ~
 chmod +x install-nethunter-termux
 echo '接下来一路回车就行啦!3秒后开始!'
