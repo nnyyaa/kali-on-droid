@@ -13,7 +13,6 @@ Y | y)
 esac
 
 apt update && apt upgrade
-cd ~
 pkg install wget curl unzip tar git aria2 -y
 cd ~
 aria2c https://images.kali.org/nethunter/kalifs-arm64-full.tar.xz
