@@ -4,7 +4,7 @@
 
 
 这个脚本用了kali官方的kali-nethunter!
-
+（我是菜鸡，只会搞一些基础的东西qaq）
 
 食用方法：
 
@@ -16,7 +16,10 @@ pkg install git -y
 git clone https://hub.fastgit.xyz/wspbh/kali-on-phone.git
 cd kali-on-phone
 chmod +x install.sh
-./install.sh  
+```  
+然后
+```
+./install.sh
 ```
 然后是等
 
