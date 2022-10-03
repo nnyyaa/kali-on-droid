@@ -1,4 +1,4 @@
-#/data/data/com.termux/files/usr/bin/bash
+#!/data/data/com.termux/files/usr/bin/bash
 echo -e "\033[34m 作者:wspbh github地址:www.github.com/wspbh
 该脚本需下载近1.7G的文件
 确保你的网络正常，记得关流量XD否则安装失败不怪我
@@ -29,6 +29,7 @@ if [ ! -d kali-arm64 ];then
            exit 1
 
 fi
+
 
 echo '完成！'
 echo '你有了自己的kali'
