@@ -1,4 +1,4 @@
-#!/data/data/com.termux/files/usr/bin/bash
+#!$PREFIX/bin/bash
 echo -e "\033[34m 作者:wspbh github地址:www.github.com/wspbh
 该脚本需下载近1.7G的文件
 确保你的网络正常，记得关流量XD否则安装失败不怪我
@@ -13,7 +13,7 @@ Y | y)
 esac
 
 apt update && apt upgrade
-pkg install wget curl unzip tar git aria2 -y
+apt install wget curl unzip tar git aria2 -y
 cd ~
 aria2c https://images.kali.org/nethunter/kalifs-arm64-full.tar.xz
 mv ~/kali-on-phone/install-nethunter-termux ~
