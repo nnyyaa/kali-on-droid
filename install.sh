@@ -32,3 +32,4 @@ fi
 
 
 echo '完成！\n 查看这里以获得启动帮助:https://wspbh.github.io/img/nh-help:https://wspbh.github.io/img/nh-help.jpg'
+echo '十分感谢国光大佬的整理!'
