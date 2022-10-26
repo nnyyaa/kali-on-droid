@@ -31,9 +31,4 @@ if [ ! -d kali-arm64 ];then
 fi
 
 
-echo '完成！'
-echo '你有了自己的kali'
-echo '我的qq:1769481479'
-echo '我的github:www.github.com/wspbh'
-echo '该项目地址:www.github.com/wspbh/kali-on-phone'
-echo '使用方法就自己百度吧'
+echo '完成！\n 查看这里以获得启动帮助:https://wspbh.github.io/img/nh-help:https://wspbh.github.io/img/nh-help.jpg'
